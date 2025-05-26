@@ -38,11 +38,16 @@ export default function Login() {
                   type="text"
                   required
                   className={inputClass}
+                  data-testid="input-name"
                 />
               </div>
             </div>
             <div>
-              <button type="submit" className={buttonClass}>
+              <button
+                type="submit"
+                data-testid="button-send"
+                className={buttonClass}
+              >
                 Ingresar
               </button>
             </div>

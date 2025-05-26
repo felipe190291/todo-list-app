@@ -13,7 +13,7 @@ import {
   SortableContext,
   verticalListSortingStrategy,
 } from "@dnd-kit/sortable";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   buttonClass,
   columnInfo,
@@ -73,14 +73,6 @@ function Page() {
       setLoader(false);
     }
   }
-
-  useEffect(() => {
-    fetchTasks();
-  }, []);
-  useEffect(() => {
-    const groupedTasks = groupTasksByStatus(tasks);
-    setTaskMap(groupedTasks);
-  }, [tasks]);
 
   const [searchQuery, setSearchQuery] = useState<string>("");
   const userName = useUserStore((state) => state.name);
@@ -175,10 +167,21 @@ function Page() {
     }
   }, [searchQuery]);
 
+  useEffect(() => {
+    fetchTasks();
+  }, []);
+  useEffect(() => {
+    const groupedTasks = groupTasksByStatus(tasks);
+    setTaskMap(groupedTasks);
+  }, [tasks]);
+
   return (
     <div className="flex min-h-full w-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 ">
       <div className="flex text-center justify-center mb-5">
-        <h1 className="font-bold text-xl text-black dark:text-white">
+        <h1
+          className="font-bold text-xl text-black dark:text-white"
+          data-testid="title-dashboard"
+        >
           Dashboard {userName ?? ""}
         </h1>
       </div>
