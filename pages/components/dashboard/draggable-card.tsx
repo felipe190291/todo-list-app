@@ -17,7 +17,7 @@ export default function DraggableCard({
   color: string;
 }) {
   const { attributes, listeners, setNodeRef, transform } = useDraggable({
-    id: id.toString(),
+    id: id,
   });
   const [openModal, setOpenModal] = useState(false);
   const { deleteTask } = useTaskStore();
@@ -50,12 +50,12 @@ export default function DraggableCard({
               className="mx-3 h-3 w-auto"
               style={{ color: color }}
             />
-            {task.title}
+            {task?.title || ""}
           </span>
-          <span>{task.assignedTo}</span>
+          <span>{task?.assignedTo || ""}</span>
         </div>
         <div className="flex items-center justify-end">
-          <span className="italic text-xs">{task.description}</span>
+          <span className="italic text-xs">{task?.description || ""}</span>
         </div>
       </div>
       <div className="flex items-center justify-end">

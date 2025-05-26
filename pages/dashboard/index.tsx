@@ -23,7 +23,7 @@ import {
 } from "@/types/themeTypes";
 import axios from "axios";
 import DraggableCard from "../components/dashboard/draggable-card";
-import { SearchBar } from "../components/dashboard/search";
+import SearchBar from "../components/dashboard/search";
 import Modal from "../components/modals/modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlusCircle } from "@fortawesome/free-solid-svg-icons";
@@ -162,13 +162,7 @@ function Page() {
 
     return groupedTasks[columnId] || [];
   };
-  const tasks_table_headers = [
-    { slug: "title", name: "Título" },
-    { slug: "description", name: "Descripción" },
-    { slug: "status", name: "Estado" },
-    { slug: "assignedTo", name: "Asignado" },
-    { slug: "actions", name: "Acciones" },
-  ];
+
   useEffect(() => {
     if (searchQuery.length > 0) {
       let filterTask = tasks.filter((tsk) =>
@@ -235,7 +229,7 @@ function Page() {
             </div>
             <div className=" md:hidden w-full flex  overflow-auto ">
               <TableContainer>
-                <TableHead headers={tasks_table_headers} />
+                <TableHead />
                 <TableBody />
               </TableContainer>
             </div>

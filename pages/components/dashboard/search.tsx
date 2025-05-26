@@ -6,7 +6,7 @@ interface OrdersTableProps {
   setSearchQuery: (setSearchQuery: string) => void;
   placeholderCustom?: string;
 }
-export function SearchBar({
+export default function SearchBar({
   searchQuery,
   setSearchQuery,
   placeholderCustom = "Buscar personas ..",

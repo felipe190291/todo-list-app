@@ -20,3 +20,6 @@ export const useThemeSwitcher = () => {
 
   return { toggleTheme, theme };
 };
+export default function Other() {
+  return;
+}
