@@ -1,4 +1,4 @@
-import { buttonClass, Task } from "@/types/themeTypes";
+import { Task } from "@/types/themeTypes";
 import { useDraggable } from "@dnd-kit/core";
 import { faEdit, faFlag, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,6 +7,7 @@ import { useTaskStore } from "@/store/task/taskStore";
 import { useState } from "react";
 import Modal from "../modals/modal";
 import EditTaskForm from "./edit-task-from";
+import { buttonClass } from "@/types/constants";
 export default function DraggableCard({
   id,
   task,

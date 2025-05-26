@@ -1,5 +1,6 @@
 import { useUserStore } from "@/store/user/userStore";
-import { buttonClass, inputClass } from "@/types/themeTypes";
+import { buttonClass, inputClass } from "@/types/constants";
+
 import { useRouter } from "next/navigation";
 export default function Login() {
   const setName = useUserStore((state) => state.setName);

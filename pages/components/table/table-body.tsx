@@ -1,6 +1,7 @@
 import { useTaskStore } from "@/store/task/taskStore";
-import { style_table_body_row } from "@/types/themeTypes";
+
 import TableBodyRow from "./table-body-row";
+import { style_table_body_row } from "@/types/constants";
 
 export default function TableBody() {
   const { tasks } = useTaskStore();

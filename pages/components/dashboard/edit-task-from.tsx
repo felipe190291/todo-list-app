@@ -1,7 +1,8 @@
 import { useUserStore } from "@/store/user/userStore";
-import { buttonClass, inputClass, states } from "@/types/themeTypes";
+import { states } from "@/types/themeTypes";
 import persons from "@/public/listPersons.json";
 import { useTaskStore } from "@/store/task/taskStore";
+import { buttonClass, inputClass } from "@/types/constants";
 
 export default function EditTaskForm({
   close,

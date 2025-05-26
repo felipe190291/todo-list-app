@@ -1,10 +1,11 @@
 import { useTaskStore } from "@/store/task/taskStore";
-import { buttonClass, states, style_table_body_cell } from "@/types/themeTypes";
+import { states } from "@/types/themeTypes";
 import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import EditTaskForm from "../dashboard/edit-task-from";
 import Modal from "../modals/modal";
 import { useState } from "react";
+import { buttonClass, style_table_body_cell } from "@/types/constants";
 
 interface TableBodyRowProps {
   taskId?: string;
