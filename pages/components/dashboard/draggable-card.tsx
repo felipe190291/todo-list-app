@@ -34,7 +34,7 @@ export default function DraggableCard({
   };
   return (
     <div
-      className=" relative rounded-lg text-pd-dark dark:text-pd-light bg-white dark:bg-pd-dark shadow-lg py-2 px-3 mb-3"
+      className=" relative rounded-lg bg-white shadow-lg py-2 px-3 mb-3"
       style={style}
     >
       <div

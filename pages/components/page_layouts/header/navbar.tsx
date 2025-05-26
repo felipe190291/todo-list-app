@@ -10,17 +10,13 @@ function ButtonTheme() {
   return (
     <button
       onClick={toggleTheme}
-      className={`relative  rounded-full flex items-center px-1 transition-colors duration-300 ${
-        !isDark ? "bg-gray-light" : "bg-pd-dark"
+      className={`relative  rounded-full flex items-center px-1 transition-colors duration-300"
       }`}
     >
       <div className="flex justify-between w-full z-10 text-sm px-1">
         <FontAwesomeIcon
           icon={isDark ? faSun : faMoon}
           title={isDark ? "Modo claro" : "Modo oscuro"}
-          className={`w-4 h-auto ${
-            isDark ? "text-pd-dark" : "text-gray-light"
-          }`}
         />
       </div>
     </button>
@@ -49,7 +45,7 @@ export default function Navbar() {
           <FontAwesomeIcon
             onClick={() => router.push("/")}
             icon={faLeftLong}
-            className="w-4 h-auto text-pd-dark"
+            className="w-4 h-auto"
             title="Inicio"
           />
         </div>

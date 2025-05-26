@@ -130,7 +130,7 @@ function Page() {
           background: color + "40",
         }}
       >
-        <h4 className="font-semibold text-uppercase mb-2 text-gray-darkest dark:text-pd-light text-center flex items-center justify-center gap-2">
+        <h4 className="font-semibold text-uppercase mb-2 text-gray-darkest dark:text-white text-center flex items-center justify-center gap-2">
           {label}
         </h4>
         <SortableContext

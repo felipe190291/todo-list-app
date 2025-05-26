@@ -41,8 +41,8 @@ export const inputClass =
   "block w-full rounded-md bg-gray-100 px-3 py-1.5 shadow-lg text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6";
 
 export const style_table_head_row =
-  "text-left font-medium text-sm text-gray-darkest dark:text-pd-light text-center sticky top-0 bg-pd-bg dark:bg-pd-dark z-20";
+  "text-left font-medium text-sm text-gray-darkest  text-center sticky top-0 z-20";
 export const style_table_head_cell = "px-6 py-3 tracking-wider dark:text-white";
 export const style_table_body_row =
-  "text-sm text-gray-darkest dark:text-pd-light hover:bg-pd-bg dark:hover:bg-pd-dark text-center px-3";
+  "text-sm text-gray-darkest text-center px-3";
 export const style_table_body_cell = "px-3 py-3 whitespace-nowrap";
