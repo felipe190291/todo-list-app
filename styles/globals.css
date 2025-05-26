@@ -1,26 +1,27 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.dot {
+  width: 7px;
+  height: 7px;
+  background-color: #d7d7d7;
+  border-radius: 50%;
+  margin-right: 6px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.animate-dot1 {
+  animation: dotAnimation 1.8s infinite ease-in-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.animate-dot2 {
+  animation: dotAnimation 1.8s infinite 0.3s ease-in-out;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-dot3 {
+  animation: dotAnimation 1.8s infinite 0.6s ease-in-out;
+}
+
+.animate-dot4 {
+  animation: dotAnimation 1.8s infinite 0.9s ease-in-out;
 }
